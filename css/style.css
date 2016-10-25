@@ -1,0 +1,59 @@
+.bottom-nav-wrapper{
+  display: flex;
+  justify-content: center;
+}
+.bottom-nav{
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+}
+
+.bottom-nav p {
+  font-family: 'Lora', serif;
+  font-size: 11.4px;
+  line-height: 14px;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+}
+
+header > p {
+  font-size: 16.8px;
+  font-family: 'Lora', serif;
+}
+
+.input-column{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.input-column .sm-input{
+  width: 45vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+input[placeholder=Bio]{
+  padding-bottom: 300px;
+  width: 45vw;
+  margin: 0px;
+}
+
+.button-wrapper{
+  width: 45.6vw;
+  background-color: #85FDF3;
+  display: flex;
+  justify-content: center;
+}
+
+.button-wrapper button{
+  border: none;
+  outline: none;
+  background: none;
+  padding: 10px;
+}
