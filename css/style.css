@@ -24,34 +24,58 @@ header > p {
   font-family: 'Lora', serif;
 }
 
+.greeting{
+  text-align: center;
+}
+
+.input-column span{
+  color: #C8EEEB;
+}
+
 .input-column{
   display: flex;
   flex-direction: column;
   padding-bottom: 10px;
+  position: relative;
+  left: 20px;
+  border: 1px solid green;
+  width: 30vw;
 }
 
 .input-column .sm-input{
-  width: 45vw;
+  width: 30vw;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 10px;
+  padding-left: 10px;
+  outline: none;
+  font-family: 'Lora', serif;
+  font-size: 15px;
   outline: none;
 }
 
 input[placeholder=Bio]{
-  padding-bottom: 300px;
-  width: 45vw;
+  padding-bottom: 200px;
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 30vw;
   margin: 0px;
+  font-family: 'Lora', serif;
+  font-size: 15px;
+  outline: none;
 }
 
 .button-wrapper{
-  width: 45.6vw;
+  width: 30vw;
   background-color: #85FDF3;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
 }
 
 .button-wrapper button{
+  font-family: 'Lora', serif;
+  font-size: 15px;
   border: none;
   outline: none;
   background: none;
