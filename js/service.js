@@ -10,6 +10,7 @@ this.storeProfile = function(fn, tagline, imgUrl, bio){
   profile.bio = bio;
   friendData.push(profile);
   console.log(friendData);
+  alert('Congratulations! We successfully created your profile.');
 };
 
 });
