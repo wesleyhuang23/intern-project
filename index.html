@@ -22,21 +22,21 @@
             <div class="main-wrapper">
                 <div class="input-column">
                     <p class="greeting">Welome to <span>DevMountain</span> Social <br> Add Some Info So Friends Can Find You</p>
-                    <input class="sm-input" type="text" placeholder="Full Name">
-                    <input class="sm-input" type="text" placeholder="Tagline">
-                    <input class="sm-input" type="text" placeholder="Profile Image Url">
-                    <input class="bio" type="text" placeholder="Bio">
+                    <input class="sm-input" type="text" placeholder="Full Name" ng-model="fullName">
+                    <input class="sm-input" type="text" placeholder="Tagline" ng-model="tagline">
+                    <input class="sm-input" type="text" placeholder="Profile Image Url" ng-model="imgUrl">
+                    <input class="bio" type="text" placeholder="Bio" ng-model="bio">
 
                     <div class="button-wrapper">
                       <a href="#">
-                        <button>Save Changes</button>
+                        <button ng-click="storeProfile(fullName, tagline, imgUrl, bio)">Save Changes</button>
                         </a>
                     </div>
 
                 </div>
                 <div class="right-column">
                   <div class="triangle-bg">
-                    
+
                   </div>
                   <div class="triangle-fg">
                   </div>
@@ -54,6 +54,11 @@
                     </div>
                 </footer>
                 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
-                <script src="js/animation.js"></script>
                 <script src="js/app.js"></script>
-                <scrip src="js/controller.js" </body> </html>
+                <script src="js/controller.js"></script>
+                <script src="js/service.js"></script>
+
+
+                </body>
+
+                </html>

@@ -82,6 +82,7 @@ header > p {
   font-family: 'Lora', serif;
   font-size: 15px;
   outline: none;
+  white-space: nowrap;
 }
 
 input[placeholder=Bio]{
@@ -126,7 +127,7 @@ input[placeholder=Bio]{
   height: 0;
   border-left: 300px solid transparent;
   border-right: 240px solid transparent;
-  border-bottom: 400px solid gray;
+  border-bottom: 400px solid #EBEBEB;
   transform: rotate(10deg);
   position: relative;
   top: 30px;
