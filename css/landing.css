@@ -66,83 +66,49 @@ header > p {
   font-size: 16.8px;
   font-family: 'Lora', serif;
   margin: 0;
-  text-decoration: none;
 }
+
+/*=============================
+  main section
+  =============================*/
 
 .main-wrapper{
   display: flex;
   flex-direction: row;
 }
 
-.greeting{
-  text-align: center;
-  padding-top: 20px;
-}
-
-.input-column span{
-  color: #C8EEEB;
-
-}
-
-.input-column{
-  /*border: 1px solid green;*/
-  display: flex;
-  flex-direction: column;
-  width: 380px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-}
-
-.input-column .sm-input{
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 10px;
-  width: 380px;
-  outline: none;
-  font-family: 'Lora', serif;
-  font-size: 15px;
-  outline: none;
-  white-space: nowrap;
-}
-
-textarea[placeholder=Bio]{
-  overflow: hidden;
-  resize: none;
-  padding-bottom: 200px;
-  padding-top: 10px;
-  margin: 0px;
-  font-family: 'Lora', serif;
-  font-size: 15px;
-  outline: none;
-  width: 380px;
-  border: 1px solid rgba(0, 0, 0, .15);
-}
-
-.button-wrapper button{
-  font-family: 'Lora', serif;
-  font-size: 15px;
-  border: none;
-  outline: none;
-  background: none;
-  padding: 10px;
-  width: 380px;
-}
-
-.button-wrapper{
-  background-color: #85FDF3;
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  width: 387px;
-
-}
-
-.right-column{
+.bio-column{
   /*border: 1px solid green;*/
   height: 70vh;
-  width: 570px;
+  width: 400px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+
+.bio-column h1{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 2px;
+  word-spacing: 12px;
+  word-break: break-all;
+  color: #272727;
+  font-size: 38.4px;
+  font-family: 'Lora-Regular', serif;
+}
+
+.tagline{
+  padding-top: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Lora', serif;
+}
+
+.bio{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
 }
 
 .triangle-bg{
@@ -154,7 +120,7 @@ textarea[placeholder=Bio]{
   transform: rotate(10deg);
   position: relative;
   top: 30px;
-  right: -300px;
+  right: -65px;
 }
 
 .triangle-fg{
@@ -165,6 +131,14 @@ textarea[placeholder=Bio]{
   border-bottom: 420px solid #85FDF3;
   transform: rotate(175deg);
   position: relative;
-  top: 235px;
-  right: 240px;
+  top: -155px;
+  right: -65px;
+}
+
+.triangle-fg img{
+  position: absolute;
+  height: 400px;
+  top:34px;
+  right: -200px;
+
 }

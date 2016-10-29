@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="internApp">
     <head>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/landing.css">
         <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
         <meta charset="utf-8">
         <title>Intern Project</title>
@@ -12,9 +12,9 @@
           <div class=header-contents>
           <a href="#">
             <img src="img/icons/Minimal-Magnifying-Glass.png" style="height: 20px;"></a>
-            <p>DevMountain</p>
+            <a href="index.html"><p>DevMountain</p></a>
             <a href="#">
-              <img src="img/icons/burger-menu.png" style="height: 20px">
+              <img src="img/icons/burger-menu.png" style="height:20px">
             </a>
           </div>
         </header>
@@ -22,25 +22,20 @@
         <hr>
         <main>
             <div class="main-wrapper">
-                <div class="input-column">
-                    <p class="greeting">Welome to <span>DevMountain</span> Social <br> Add Some Info So Friends Can Find You</p>
-                    <input class="sm-input" type="text" placeholder="Full Name" ng-model="fullName">
-                    <input class="sm-input" type="text" placeholder="Tagline" ng-model="tagline">
-                    <input class="sm-input" type="text" placeholder="Profile Image Url" ng-model="imgUrl">
-                    <textarea class="bio" type="text" placeholder="Bio" ng-model="bio"></textarea>
+                <div class="bio-column" ng-repeat="info in friendData">
 
-                    <div class="button-wrapper">
-                      <a href="landing.html">
-                        <button ng-click="storeProfile(fullName, tagline, imgUrl, bio)">Save Changes</button>
-                        </a>
-                    </div>
+                    <h1 class="userName">{{info.fullName}}</h1>
+                    <p class="tagline">{{info.tagline}}</p>
+                    <p class="bio">{{info.bio}}</p>
 
+                </div>
                 </div>
                 <div class="right-column">
                   <div class="triangle-bg">
 
                   </div>
-                  <div class="triangle-fg">
+                  <div class="triangle-fg" style="text-align:center">
+                    <img src="https://i.vimeocdn.com/portrait/2859117_300x300" style="opacity:.2; transform:rotate(-175deg)">
                   </div>
               </div>
             </div>
