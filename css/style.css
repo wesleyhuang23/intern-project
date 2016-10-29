@@ -114,8 +114,8 @@ input[placeholder=Bio]{
 }
 
 .right-column{
-  border: 1px solid green;
-  height: 80vh;
+  /*border: 1px solid green;*/
+  height: 90vh;
   width: 570px;
   display: flex;
   justify-content: center;
@@ -124,17 +124,23 @@ input[placeholder=Bio]{
 .triangle-bg{
   width: 0;
   height: 0;
-  border-left: 230px solid transparent;
-  border-right: 230px solid transparent;
-  border-bottom: 290px solid gray;
+  border-left: 300px solid transparent;
+  border-right: 240px solid transparent;
+  border-bottom: 400px solid gray;
   transform: rotate(10deg);
+  position: relative;
+  top: 30px;
+  right: -300px;
 }
 
 .triangle-fg{
   width: 0;
   height: 0;
-  border-left: 230px solid transparent;
-  border-right: 230px solid transparent;
-  border-bottom: 290px solid gray;
-  transform: rotate(10deg);
+  border-left: 300px solid transparent;
+  border-right: 240px solid transparent;
+  border-bottom: 420px solid #85FDF3;
+  transform: rotate(175deg);
+  position: relative;
+  top: 235px;
+  right: 240px;
 }
