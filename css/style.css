@@ -85,7 +85,9 @@ header > p {
   white-space: nowrap;
 }
 
-input[placeholder=Bio]{
+textarea[placeholder=Bio]{
+  overflow: hidden;
+  resize: none;
   padding-bottom: 200px;
   padding-top: 10px;
   margin: 0px;
@@ -93,6 +95,7 @@ input[placeholder=Bio]{
   font-size: 15px;
   outline: none;
   width: 380px;
+  border: 1px solid rgba(0, 0, 0, .15);
 }
 
 .button-wrapper button{
@@ -110,7 +113,7 @@ input[placeholder=Bio]{
   margin-top: 10px;
   display: flex;
   justify-content: center;
-  width: 400px;
+  width: 380px;
 
 }
 
