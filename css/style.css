@@ -139,13 +139,14 @@ textarea[placeholder=Bio]{
 
 .right-column{
   /*border: 1px solid green;*/
-  height: 70vh;
+  height: 80vh;
   width: 570px;
   display: flex;
   justify-content: center;
 }
 
 .triangle-bg{
+  display: none;
   width: 0;
   height: 0;
   border-left: 300px solid transparent;
@@ -158,6 +159,7 @@ textarea[placeholder=Bio]{
 }
 
 .triangle-fg{
+  display: none;
   width: 0;
   height: 0;
   border-left: 300px solid transparent;

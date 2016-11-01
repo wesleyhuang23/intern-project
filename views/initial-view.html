@@ -1,0 +1,25 @@
+<main>
+    <div class="main-wrapper">
+        <div class="input-column">
+            <p class="greeting">Welome to <span>DevMountain</span> Social <br> Add Some Info So Friends Can Find You</p>
+            <input class="sm-input" type="text" placeholder="Full Name" ng-model="fullName">
+            <input class="sm-input" type="text" placeholder="Tagline" ng-model="tagline">
+            <input class="sm-input" type="text" placeholder="Profile Image Url" ng-model="imgUrl">
+            <textarea class="bio" type="text" placeholder="Bio" ng-model="bio"></textarea>
+
+            <div class="button-wrapper">
+
+                <button ng-click="storeProfile(fullName, tagline, imgUrl, bio)"><a ui-sref="landing-view">Save Changes</a></button>
+
+            </div>
+
+        </div>
+        <div class="right-column">
+          <div class="triangle-bg">
+
+          </div>
+          <div class="triangle-fg">
+          </div>
+      </div>
+    </div>
+  </main>
